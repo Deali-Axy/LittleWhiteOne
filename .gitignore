@@ -1,0 +1,8 @@
+.idea/
+venv/
+core/ext/django_chatterbot/migrations
+
+db.sqlite3
+db.sqlite3-shm
+db.sqlite3-wal
+sentence_tokenizer.pickle

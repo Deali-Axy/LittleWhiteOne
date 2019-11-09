@@ -1,0 +1,2 @@
+
+isDownloadedCrops = False
