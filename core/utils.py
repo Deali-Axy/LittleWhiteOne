@@ -2,6 +2,7 @@
 ChatterBot utility functions
 """
 from nltk.corpus import wordnet
+from core import config
 
 
 def import_module(dotted_path):
@@ -187,14 +188,16 @@ def download_nltk_stopwords():
     """
     Download required NLTK stopwords corpus if it has not already been downloaded.
     """
-    nltk_download_corpus('stopwords')
+    if config.is_need_download_nltk_data:
+        nltk_download_corpus('stopwords')
 
 
 def download_nltk_wordnet():
     """
     Download required NLTK corpora if they have not already been downloaded.
     """
-    nltk_download_corpus('corpora/wordnet')
+    if config.is_need_download_nltk_data:
+        nltk_download_corpus('corpora/wordnet')
 
 
 def download_nltk_averaged_perceptron_tagger():
@@ -202,7 +205,8 @@ def download_nltk_averaged_perceptron_tagger():
     Download the NLTK averaged perceptron tagger that is required for this algorithm
     to run only if the corpora has not already been downloaded.
     """
-    nltk_download_corpus('averaged_perceptron_tagger')
+    if config.is_need_download_nltk_data:
+        nltk_download_corpus('averaged_perceptron_tagger')
 
 
 def download_nltk_vader_lexicon():
@@ -210,4 +214,5 @@ def download_nltk_vader_lexicon():
     Download the NLTK vader lexicon for sentiment analysis
     that is required for this algorithm to run.
     """
-    nltk_download_corpus('vader_lexicon')
+    if config.is_need_download_nltk_data:
+        nltk_download_corpus('vader_lexicon')
