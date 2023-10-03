@@ -23,5 +23,5 @@ sqlparse==0.4.4
 srsly==0.2.0
 thinc==7.0.8
 tqdm==4.37.0
-urllib3==1.26.5
+urllib3==1.26.17
 wasabi==0.4.0
