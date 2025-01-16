@@ -2,7 +2,7 @@ blis==0.2.4
 certifi==2024.7.4
 chardet==3.0.4
 cymem==2.0.2
-Django==4.2.17
+Django==4.2.18
 idna==3.7
 mathparse==0.1.2
 murmurhash==1.0.2
